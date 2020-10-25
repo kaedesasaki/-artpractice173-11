@@ -4,13 +4,13 @@ var lala ;
 var star;
 
 function setup() {
-createCanvas(300,300); 
+createCanvas(1000,1000); 
 kiki = new Group();
 lala = new Group();
 star = new Group();
  
 for(var i=0 ; i<7 ; i++){
-  var sprite = createSprite(random(0,width), random(0,-300));
+  var sprite = createSprite(random(0,width), random(0,-1000));
   sprite.addAnimation("kiki", "assets/kiki1.png","assets/kiki4.png");
   sprite.velocity.y = 1; 
   kikis.add(sprite);
@@ -21,7 +21,7 @@ for(var i=0 ; i<7 ; i++){
 }
 
 for(var j=0 ; j<7 ; j++){
-  var sprite = createSprite(random(0,width), random(0,-300));
+  var sprite = createSprite(random(0,width), random(0,-1000));
   sprite.addAnimation("lala", "assets/lala1.png","assets/lala4.png");
   sprite.velocity.y = 3;//速度を3に設定
   lala.add(sprite);
@@ -32,7 +32,7 @@ for(var j=0 ; j<7 ; j++){
 }
   
 for(var k=0 ; k<7 ; k++){
-  var sprite = createSprite(random(0,width), random(0,-300));
+  var sprite = createSprite(random(0,width), random(0,-1000));
   sprite.addAnimation("star", "assets/star1.png","assets/star4.png");
   sprite.velocity.y = 5; //速度を5に設定
   star.add(sprite);
