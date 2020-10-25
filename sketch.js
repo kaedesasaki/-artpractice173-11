@@ -3,6 +3,13 @@
 	var lala;
         var star;
 	
+function preload(){
+  cloud = loadImage('cloud.png');
+  cloud2 = loadImage('cloud.png');
+  cloud3 = loadImage('cloud.png');
+  cloud4 = loadImage('cloud.png');
+}
+
 function setup() {
   createCanvas(1000,1000); 
   kiki = new Group();
@@ -45,7 +52,7 @@ for(var k=0 ; k<7 ; k++){
 }
 	
 function draw() {
-  background(255);
+  background(158, 231, 250);
   for(var i = 0; i<kiki.length; i++) {
     var p = kiki[i];
     if(p.position.y > height)
@@ -63,4 +70,8 @@ for(var k = 0; k<star.length; k++) {
     g.position.y = 0;
   }
   drawSprites();
+  image(cloud, 100, 150, 200, 200);
+  image(cloud2, 500, 400, 200, 200);
+  image(cloud3, 250, 600, 200, 200);
+  image(cloud4, 600, 700, 200, 200);
 }
