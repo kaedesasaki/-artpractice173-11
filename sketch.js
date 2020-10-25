@@ -7,7 +7,7 @@ function setup() {
   createCanvas(300,300); 
   kiki = new Group();
   lala = new Group();
-  stars = new Group();
+  star = new Group();
 	 
   for(var i=0 ; i<7 ; i++){
     var sprite = createSprite(random(0,width), random(0,-300));
