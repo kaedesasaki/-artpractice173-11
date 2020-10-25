@@ -1,6 +1,6 @@
 //ClickedSprites
 	var kiki;
-	var lalas ;
+	var lala;
 	var star;
 	
 function setup() {
