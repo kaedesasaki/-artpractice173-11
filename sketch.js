@@ -14,7 +14,7 @@ for(var i=0 ; i<7 ; i++){
   sprite.addAnimation("kiki", "assets/kiki1.png","assets/kiki4.png");
   sprite.velocity.y = 1; 
   kikis.add(sprite);
-  sprite.setCollider("circle", 0,0,16); //コライダーの範囲を設定する
+  sprite.setCollider("circle", 0,0,50); //コライダーの範囲を設定する
   sprite.onMousePressed = function() { //スプライトをクリックした時の設定をする
     this.remove(); //スプライトを消す
   }
@@ -25,7 +25,7 @@ for(var j=0 ; j<7 ; j++){
   sprite.addAnimation("lala", "assets/lala1.png","assets/lala4.png");
   sprite.velocity.y = 3;//速度を3に設定
   lala.add(sprite);
-  sprite.setCollider("circle", 0,0,16); //コライダーの範囲を設定する
+  sprite.setCollider("circle", 0,0,50); //コライダーの範囲を設定する
   sprite.onMousePressed = function() {//スプライトをクリックした時の設定をする
     this.remove(); //スプライトを消す
   }
@@ -36,7 +36,7 @@ for(var k=0 ; k<7 ; k++){
   sprite.addAnimation("star", "assets/star1.png","assets/star4.png");
   sprite.velocity.y = 5; //速度を5に設定
   star.add(sprite);
-  sprite.setCollider("circle", 0,0,16);  //コライダーの範囲を設定する
+  sprite.setCollider("circle", 0,0,50);  //コライダーの範囲を設定する
   sprite.onMousePressed = function() { //スプライトをクリックした時の設定をする
     this.remove(); //スプライトを消す
   }
